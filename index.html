@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Todo Application</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+  </head>
+  <body>
+    <div id="todoApp">
+      <h1>Todo List</h1>
+      <div id="createTask">
+        <h2>Create Task</h2>
+        <form>
+          <div>
+            <label for="taskTitle">Title:</label>
+            <input type="text" id="taskTitle">
+          </div>
+          <div>
+            <label for="taskDescription">Description:</label>
+            <textarea id="taskDescription"></textarea>
+          </div>
+          <div>
+            <label for="expectedCompletionDate">Expected Completion Date:</label>
+            <input type="date" id="expectedCompletionDate">
+          </div>
+          <button type="submit">Add Task</button>
+        </form>
+      </div>
+      <div id="allTodos">
+        <h2>All Todos</h2>
+        <ul id="allTodosList"></ul>
+      </div>
+      <div id="completedTodos">
+        <h2>Completed Todos</h2>
+        <ul id="completedTodosList"></ul>
+      </div>
+      <div id="uncompletedTodos">
+        <h2>Uncompleted Todos</h2>
+        <ul id="uncompletedTodosList"></ul>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
